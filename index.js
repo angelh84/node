@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
     req.on('end', () => {
         router.hello((statusCode, payload) => {
             //  Covert the payload to a string
-            var payloadString = JSON.stringify(payload);
+            let payloadString = JSON.stringify(payload);
 
             // Return the response
             res.setHeader('Content-Type', 'application/json');
