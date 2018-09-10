@@ -19,7 +19,7 @@ const server = http.createServer((req, res) => {
 })
 
 // Router that assigns pathname handlers
-var router = {
+let router = {
     hello: (callback) => {
         callback(200, {'message' : 'Hello there, Pirple!'});
     }
