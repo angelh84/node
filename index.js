@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-    // data emitt event
+    // data emit event
     req.on('data', data => {});
 
     // request end event
