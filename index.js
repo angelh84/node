@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
             let payloadString = JSON.stringify(payload);
 
             // Return the response
-            res.setHeader('Content-Type', 'application/json');
+            res.setHeader("Content-Type", "application/json");
             res.writeHead(statusCode);
             res.end(payloadString);
         });
@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
 // Router that assigns pathname handlers
 let router = {
     hello: (callback) => {
-        callback(200, {'message' : 'Hello there, Pirple!'});
+        callback(200, {"message" : "Hello there, Pirple!"});
     }
 };
 
