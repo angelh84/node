@@ -3,10 +3,10 @@
 */
 
 // Dependencies
-var http = require('http');
-var https = require('https');
-var url = require('url');
-var StringDecoder = require('string_decoder').StringDecoder;
+let http = require('http');
+let https = require('https');
+let url = require('url');
+let StringDecoder = require('string_decoder').StringDecoder;
 let config = require('./lib/config');
 let fs = require('fs');
 let _data = require('./lib/data');
